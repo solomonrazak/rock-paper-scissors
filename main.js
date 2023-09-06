@@ -1,3 +1,10 @@
+// function to hide and display game section
+const mainButton = document.getElementById("start_button");
+mainButton.addEventListener("click", function(event){
+    this.remove();
+    document.querySelector("main").classList.remove("hidden");
+})
+
 // select emoji buttons for either rock scissors or paper.
 const selectionButtons = document.querySelectorAll("[data-selection]");
 

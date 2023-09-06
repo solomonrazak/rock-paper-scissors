@@ -8,10 +8,17 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-        <h2 class="anime">This is a rock-paper-scissors game</h2>
-    
+<div class="container">
+    <div class="typewriter">
+        <h2 class="one anime">This is a rock-paper-scissors game</h2>
+        <h2 class="two anime">And you are going to play against a computer</h2>
+        <h2 class="three anime">Now Let's see who wins..</h2>
+    </div>
+    <!--  button to set play -->
+    <button id="start_button">Play Now</button>
 
     <!-- emoji buttons for rock paper and scissors -->
+    <main class="hidden">
     <div class="selections">
         <button class="selection" data-selection="rock">✊</button>
         <button class="selection" data-selection="paper">✋</button>
@@ -35,6 +42,7 @@
 
         
     </div>
-   
+    </main>
+</div>
 </body>
 </html>
