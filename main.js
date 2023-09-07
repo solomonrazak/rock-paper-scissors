@@ -1,8 +1,8 @@
 // function to hide and display game section
 const mainButton = document.getElementById("start_button");
 mainButton.addEventListener("click", function(event){
-    this.remove();
-    document.querySelector("main").classList.remove("hidden");
+    this.remove(); // remove the button it's been clicked.
+    document.querySelector("main").classList.remove("hidden"); // to remove the hidden class on main to display content.
 })
 
 // select emoji buttons for either rock scissors or paper.
@@ -80,4 +80,28 @@ function isWinner(selection, opponentSelection){
 function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
     return SELECTIONS[randomIndex];
+}
+
+// display winner
+
+const playDone = document.getElementById("done");
+playDone.addEventListener("click", displayWinner);
+
+const a = document.getElementById("num1").value;
+const b = document.getElementById("num2").value;
+
+
+function displayWinner(a, b){
+    if (a > b){
+        console.log("you won");
+    }
+    else if (b > a){
+        console.log("you lost");
+    }
+    else if (a === b){
+        console.log("that was a draw")
+    }
+    
+    
+    
 }

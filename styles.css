@@ -110,6 +110,8 @@ body{
     align-items: center;
     font-weight: bold;
     margin-top: 1rem;
+    
+    padding-bottom: 1.4rem;
 }
 .result-score{
     margin-left: .1rem;
@@ -122,4 +124,18 @@ body{
 .result-selection.winner{
     opacity: 1;
     font-size: 1.5rem;
+}
+#done{
+    display: block;
+    margin: 0 auto;
+    background-color: gray;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    border: solid 1px black;
+    
+}
+#done:hover{
+    background-color: azure;
+    color: black;
 }
