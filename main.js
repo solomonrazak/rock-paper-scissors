@@ -87,9 +87,9 @@ function randomSelection() {
 const playDone = document.getElementById("done");
 playDone.addEventListener("click", displayWinner);
 
-const a = document.getElementById("num1").value;
-const b = document.getElementById("num2").value;
-
+const a = document.querySelector("[your-score-span]").value;
+const b = document.querySelector("[computer-score-span]").value;
+ 
 
 function displayWinner(a, b){
     if (a > b){
@@ -101,7 +101,10 @@ function displayWinner(a, b){
     else if (a === b){
         console.log("that was a draw")
     }
-    
+    else {
+        console.log("we are here")
+    }
+    //this.remove();
     
     
 }
